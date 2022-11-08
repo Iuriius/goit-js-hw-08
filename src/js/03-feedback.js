@@ -6,7 +6,7 @@ initForm();
 filterForm.addEventListener('input', evt => {
     evt.preventDefault();
     const formData = new FormData(filterForm);
-    formData.forEach((email, message));
+    formData.forEach((email, message) => console.log(email, message));
 });
 
 filterForm.addEventListener('change', evt => {
