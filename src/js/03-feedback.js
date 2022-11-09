@@ -24,8 +24,8 @@ function initForm() {
     let persistedFilters = localStorage.getItem(LOCALSTORAGE_KEY);
     if (persistedFilters) {
         persistedFilters = JSON.parse(persistedFilters);
-        Object.entries(persistedFilters).forEach(([email, message]) => {
-            filterForm.elements[email, message].value = value;
+        Object.entries(persistedFilters).forEach(([name, value]) => {
+            filterForm.elements[name].value = value;
         });
     }
 };
